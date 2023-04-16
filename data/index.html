@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ESP-Car</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>ESP8266 Web Server</h1>
+    <div class="MPU6050">
+        <h2>MPU6050</h2>
+        <p>Acceleration</p>
+        <p>Acceleration X: <span id="accelX">%accelX%</span></p>
+        <p>Acceleration Y: <span id="accelY">%accelY%</span></p>
+        <p>Acceleration Z: <span id="accelZ">%accelZ%</span></p>
+        <p>Rotation</p>
+        <p>Rotation X: <span id="rotX">%rotX%</span></p>
+        <p>Rotation Y: <span id="rotY">%rotY%</span></p>
+        <p>Rotation Z: <span id="rotZ">%rotZ%</span></p>
+    </div>
+    <div class="zero-to-onehundred">
+        <h2>0-100</h2>
+        <button id ="zeroToOneButton">Start</button>
+        <p id="zeroToOneText"></p>
+        <p id="zeroToOneTextTime"></p>
+    </div>
+    <div class="top-speed">
+        <h2>Top speed</h2>
+        <button id="topSpeedButton">Start</button>
+        <p id="speedText"></p>
+        <p id="speedTextTime"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
